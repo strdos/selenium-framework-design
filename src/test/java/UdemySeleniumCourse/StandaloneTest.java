@@ -14,14 +14,13 @@ import org.testng.Assert;
 import java.time.Duration;
 import java.util.List;
 
-import static java.time.Duration.ofSeconds;
-
 public class StandaloneTest {
     public static void main(String[] args) {
         String baseUrl = "https://rahulshettyacademy.com/client/";
         String email = "alex@test.com";
         String password = "Test1234!";
         String itemToAdd = "ZARA COAT 3";
+        String country = "Australia";
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup(); //sets up chrome driver without the need to download the executable and use System.SetProperty
@@ -58,6 +57,14 @@ public class StandaloneTest {
         Boolean match = itemNames.stream().anyMatch(s -> s.getText().equalsIgnoreCase(itemToAdd));
         Assert.assertTrue(match);
         driver.findElement(By.cssSelector("[class*='subtotal'] button")).click();
-
+        driver.findElement(By.cssSelector("input[placeholder*='Country']")).sendKeys(country.substring(0,3));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class*='ta-results']")));
+        List<WebElement> countryResults = driver.findElements(By.cssSelector("[class*='ta-results'] [class*='ta-item']"));
+        WebElement countryResult = countryResults.stream().filter(c -> c.getText().equalsIgnoreCase(country)).findFirst().orElse(null);
+        countryResult.click();
+        driver.findElement(By.cssSelector("[class*='action__submit']")).click();
+        String confirmMsg = driver.findElement(By.cssSelector(".hero-primary")).getText();
+        Assert.assertEquals(confirmMsg, "THANKYOU FOR THE ORDER.");
+        driver.close();
     }
 }
