@@ -1,4 +1,4 @@
-package UdemySeleniumCourse;
+package UdemySeleniumCourse.pageobjects;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -29,6 +29,7 @@ public class StandaloneTest {
         driver.get(baseUrl);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        LandingPage landingPage = new LandingPage(driver);
         driver.findElement(By.id("userEmail")).sendKeys(email);
         driver.findElement(By.id("userPassword")).sendKeys(password);
         driver.findElement(By.id("login")).click();

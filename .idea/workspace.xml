@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="eCommerce app - end-to-end test WIP">
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="eCommerce app - end-to-end test final">
+      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/StandaloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/StandaloneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/StandaloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/regdata" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/regdata" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +50,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="UdemySeleniumCourse.pageobjects" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="StandaloneTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.StandaloneTest" />
@@ -88,13 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678825567554</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="eCommerce app - end-to-end test final">
+      <created>1678913404404</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678913404404</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit (create Maven project, add Selenium and TestNG dependencies)" />
     <MESSAGE value="eCommerce app - end-to-end test WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="eCommerce app - end-to-end test WIP" />
+    <MESSAGE value="eCommerce app - end-to-end test final" />
+    <option name="LAST_COMMIT_MESSAGE" value="eCommerce app - end-to-end test final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
