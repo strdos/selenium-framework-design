@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add constructor, PageFactory, @FindBy">
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add ProductCatalog class, AbstractComponent class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,15 +120,34 @@
       <option name="project" value="LOCAL" />
       <updated>1679002987194</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add ProductCatalog class, AbstractComponent class">
+      <created>1679087524292</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679087524292</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit (create Maven project, add Selenium and TestNG dependencies)" />
     <MESSAGE value="eCommerce app - end-to-end test WIP" />
     <MESSAGE value="eCommerce app - end-to-end test final" />
     <MESSAGE value="add constructor, PageFactory, @FindBy" />
-    <option name="LAST_COMMIT_MESSAGE" value="add constructor, PageFactory, @FindBy" />
+    <MESSAGE value="add ProductCatalog class, AbstractComponent class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ProductCatalog class, AbstractComponent class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
