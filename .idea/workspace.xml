@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="eCommerce app - end-to-end test final">
-      <change afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest2.java" afterDir="false" />
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add constructor, PageFactory, @FindBy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/StandaloneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/regdata" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/regdata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
       <recent name="UdemySeleniumCourse.pageobjects" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StandaloneTest2">
     <configuration name="StandaloneTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.StandaloneTest" />
       <module name="SeleniumFrameworkDesign" />
@@ -69,8 +67,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StandaloneTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.pageobjects.StandaloneTest2" />
+      <module name="SeleniumFrameworkDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UdemySeleniumCourse.pageobjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StandaloneTest2" />
         <item itemvalue="Application.StandaloneTest" />
       </list>
     </recent_temporary>
@@ -105,14 +117,22 @@
       <option name="project" value="LOCAL" />
       <updated>1678913404404</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add constructor, PageFactory, @FindBy">
+      <created>1679002987194</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679002987194</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit (create Maven project, add Selenium and TestNG dependencies)" />
     <MESSAGE value="eCommerce app - end-to-end test WIP" />
     <MESSAGE value="eCommerce app - end-to-end test final" />
-    <option name="LAST_COMMIT_MESSAGE" value="eCommerce app - end-to-end test final" />
+    <MESSAGE value="add constructor, PageFactory, @FindBy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add constructor, PageFactory, @FindBy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -31,23 +31,31 @@ public class StandaloneTest2 {
         landingPage.goToUrl(baseUrl);
         landingPage.loginToApplication(email, password);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        ProductCatalog productCatalog = new ProductCatalog(driver);
+        List<WebElement> products = productCatalog.getProductList();
+
+        productCatalog.addProductToCart(itemToAdd);
+
+
+
+/*        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class*='mb-3']")));
-        List<WebElement> names = driver.findElements(By.cssSelector("[class*='mb-3']"));
-/*        for (WebElement name : names) {
-           if (name.findElement(By.cssSelector("b")).getText().equalsIgnoreCase(itemToAdd)) {
+        //List<WebElement> products = driver.findElements(By.cssSelector("[class*='mb-3']"));
+*//*        for (WebElement product : products) {
+           if (product.findElement(By.cssSelector("b")).getText().equalsIgnoreCase(itemToAdd)) {
                 driver.findElement(By.cssSelector("[class*='mb-3'] button:last-of-type")).click();
             }
-        }*/
+        }*//*
         //same as above but with streams:
-        WebElement itemToBuy = names.stream().filter(name -> name.findElement(By.cssSelector("[class*='mb-3'] b")).getText().equals(itemToAdd)).findFirst().orElse(null);
-        itemToBuy.findElement(By.cssSelector("[class*='mb-3'] button:last-of-type")).click();
+        WebElement itemToBuy = products.stream().filter(product -> product.findElement(By.cssSelector("[class*='mb-3'] b")).getText().equals(itemToAdd)).findFirst().orElse(null);
+        itemToBuy.findElement(By.cssSelector("[class*='mb-3'] button:last-of-type")).click();*/
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("ng-animating")));
+/*        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("toast-container")));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("ng-animating")));*/
+
         driver.findElement(By.xpath("//button[@routerlink='/dashboard/cart']")).click();
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("infoWrap")));
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("infoWrap")));
         /*List<WebElement> cartItems = driver.findElements(By.className("infoWrap"));
         WebElement itemToBuyNow = cartItems.stream().filter(item -> item.findElement(By.cssSelector(".infoWrap h3")).getText().equalsIgnoreCase(itemToAdd)).findFirst().orElse(null);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button")));
@@ -57,7 +65,7 @@ public class StandaloneTest2 {
         Assert.assertTrue(match);
         driver.findElement(By.cssSelector("[class*='subtotal'] button")).click();
         driver.findElement(By.cssSelector("input[placeholder*='Country']")).sendKeys(country.substring(0,3));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class*='ta-results']")));
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("[class*='ta-results']")));
         List<WebElement> countryResults = driver.findElements(By.cssSelector("[class*='ta-results'] [class*='ta-item']"));
         WebElement countryResult = countryResults.stream().filter(c -> c.getText().equalsIgnoreCase(country)).findFirst().orElse(null);
         countryResult.click();
