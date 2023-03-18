@@ -22,12 +22,12 @@ public class ProductCatalog extends AbstractComponent {
     List<WebElement> products;
     @FindBy(className="ng-animating")
     WebElement spinner;
+    @FindBy(xpath = "//button[@routerlink='/dashboard/cart']")
+    WebElement cartBtn;
 
     By productsLocator = By.cssSelector("[class*='mb-3']");
     By addToCart = By.cssSelector("[class*='mb-3'] button:last-of-type");
     By toastMsg = By.id("toast-container");
-
-    //wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("ng-animating")));
 
     public List<WebElement> getProductList() {
         waitForElementToAppear(productsLocator);
@@ -44,6 +44,10 @@ public class ProductCatalog extends AbstractComponent {
         product.findElement(addToCart).click();
         waitForElementToAppear(toastMsg);
         waitForElementToDisappear(spinner);
+    }
+
+    public void goToCart() {
+        cartBtn.click();
     }
 
 }

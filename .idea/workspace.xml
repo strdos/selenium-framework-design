@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add ProductCatalog class, AbstractComponent class">
+      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ConfirmationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/PaymentPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679087524292</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add ProductCatalog class, AbstractComponent class">
+      <created>1679087755413</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679087755413</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,7 +147,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
