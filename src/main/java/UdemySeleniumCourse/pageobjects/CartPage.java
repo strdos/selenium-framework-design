@@ -27,7 +27,9 @@ public class CartPage extends AbstractComponent {
         return productNames.stream().anyMatch(p -> p.getText().equalsIgnoreCase(itemToAdd));
     }
 
-    public void goToCheckout() {
+    public PaymentPage goToCheckout() {
         checkoutBtn.click();
+        PaymentPage paymentPage = new PaymentPage(driver);
+        return paymentPage;
     }
 }

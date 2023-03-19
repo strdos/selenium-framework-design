@@ -31,7 +31,9 @@ public class PaymentPage extends AbstractComponent {
         countryResult.click();
     }
 
-    public void placeOrder() {
+    public ConfirmationPage placeOrder() {
         placeOrderBtn.click();
+        ConfirmationPage confirmationPage = new ConfirmationPage(driver);
+        return confirmationPage;
     }
 }

@@ -1,7 +1,6 @@
 package UdemySeleniumCourse.pageobjects;
 
 import AbstractComponents.AbstractComponent;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,10 +26,12 @@ public class LandingPage extends AbstractComponent {
     public void goToUrl(String url) {
         driver.get(url);
     }
-    public void loginToApplication(String email, String password) {
+    public ProductCatalog loginToApplication(String email, String password) {
         userEmail.sendKeys(email);
         userPassword.sendKeys(password);
         submitBtn.click();
+        ProductCatalog productCatalog = new ProductCatalog(driver);
+        return productCatalog;
     }
 
 }

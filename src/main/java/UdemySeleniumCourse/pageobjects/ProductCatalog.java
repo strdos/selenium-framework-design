@@ -46,8 +46,10 @@ public class ProductCatalog extends AbstractComponent {
         waitForElementToDisappear(spinner);
     }
 
-    public void goToCart() {
+    public CartPage goToCart() {
         cartBtn.click();
+        CartPage cartPage = new CartPage(driver);
+        return cartPage;
     }
 
 }

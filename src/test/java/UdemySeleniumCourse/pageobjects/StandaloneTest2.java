@@ -32,23 +32,18 @@ public class StandaloneTest2 {
 
         LandingPage landingPage = new LandingPage(driver);
         landingPage.goToUrl(baseUrl);
-        landingPage.loginToApplication(email, password);
 
-        ProductCatalog productCatalog = new ProductCatalog(driver);
+        ProductCatalog productCatalog = landingPage.loginToApplication(email, password);
         List<WebElement> products = productCatalog.getProductList();
-
         productCatalog.addProductToCart(itemToAdd);
-        productCatalog.goToCart();
 
-        CartPage cartPage = new CartPage(driver);
+        CartPage cartPage = productCatalog.goToCart();
         Assert.assertTrue(cartPage.isProductMatch(itemToAdd));
-        cartPage.goToCheckout();
 
-        PaymentPage paymentPage = new PaymentPage(driver);
+        PaymentPage paymentPage = cartPage.goToCheckout();
         paymentPage.selectCountry(country);
-        paymentPage.placeOrder();
 
-        ConfirmationPage confirmationPage = new ConfirmationPage(driver);
+        ConfirmationPage confirmationPage = paymentPage.placeOrder();
         Assert.assertEquals(confirmMsgText, confirmationPage.getConfirmationText());
 
         driver.close();
