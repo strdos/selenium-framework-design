@@ -1,11 +1,14 @@
 package UdemySeleniumCourse.TestComponents;
 
+import UdemySeleniumCourse.pageobjects.LandingPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -14,8 +17,10 @@ import java.util.Properties;
 
 public class BaseTest {
 
-    WebDriver driver;
-    public void initializeDriver() throws IOException {
+    String baseUrl = "https://rahulshettyacademy.com/client/";
+    public WebDriver driver;
+    public LandingPage landingPage;
+    public WebDriver initializeDriver() throws IOException {
 
         Properties prop = new Properties(); //create object of Properties class to read the properties from .properties file in the resources folder
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\UdemySeleniumCourse\\resources\\global_data.properties");
@@ -39,6 +44,18 @@ public class BaseTest {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.manage().window().maximize();
+        return driver;
 
     }
+
+    @BeforeMethod
+    public LandingPage launchApplication() throws IOException {
+        driver = initializeDriver();
+        landingPage = new LandingPage(driver);
+        landingPage.goToUrl(baseUrl);
+        return landingPage;
+    }
+
+    @AfterMethod
+    public void closeBrowser() { driver.close(); }
 }

@@ -21,6 +21,8 @@ public class LandingPage extends AbstractComponent {
     WebElement userPassword;
     @FindBy(id="login")
     WebElement submitBtn;
+    @FindBy(css = "[class*='flyInOut'")
+    WebElement errorToastMsg;
 
 
     public void goToUrl(String url) {
@@ -32,6 +34,11 @@ public class LandingPage extends AbstractComponent {
         submitBtn.click();
         ProductCatalog productCatalog = new ProductCatalog(driver);
         return productCatalog;
+    }
+
+    public String getErrorMsg() {
+        waitForElementToAppear(errorToastMsg);
+        return errorToastMsg.getText();
     }
 
 }

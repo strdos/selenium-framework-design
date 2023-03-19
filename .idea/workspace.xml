@@ -4,25 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="initialize objects within page object classes">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/AbstractComponents/AbstractComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/resources/global_data.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/StandaloneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/StandaloneTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/regdata" afterDir="false" />
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="regroup classes and folders, add BaseTest class to store test config settings">
+      <change afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/ErrorValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AbstractComponents/AbstractComponent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ConfirmationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/AbstractComponents/AbstractComponent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/PaymentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/StandaloneTest2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/pageobjects/regdata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/StandaloneTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/StandaloneTest2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,36 +66,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="UdemySeleniumCourse.Tests" />
       <recent name="UdemySeleniumCourse.pageobjects" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.UdemySeleniumCourse.Tests.StandaloneTest2">
-    <configuration name="StandaloneTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.StandaloneTest" />
-      <module name="SeleniumFrameworkDesign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UdemySeleniumCourse.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StandaloneTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.pageobjects.StandaloneTest2" />
-      <module name="SeleniumFrameworkDesign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UdemySeleniumCourse.pageobjects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.ErrorValidation">
     <configuration name="UdemySeleniumCourse.Tests.StandaloneTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.StandaloneTest2" />
       <module name="SeleniumFrameworkDesign" />
@@ -121,11 +84,83 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ErrorValidation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UdemySeleniumCourse.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UdemySeleniumCourse.Tests" />
+      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.ErrorValidation" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ErrorValidation.submitOrder" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UdemySeleniumCourse.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UdemySeleniumCourse.Tests" />
+      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.ErrorValidation" />
+      <option name="METHOD_NAME" value="submitOrder" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StandaloneTest2" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UdemySeleniumCourse.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UdemySeleniumCourse.Tests" />
+      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.StandaloneTest2" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StandaloneTest2.submitOrder" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UdemySeleniumCourse.Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UdemySeleniumCourse.Tests" />
+      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.StandaloneTest2" />
+      <option name="METHOD_NAME" value="submitOrder" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ErrorValidation" />
+        <item itemvalue="TestNG.ErrorValidation.submitOrder" />
+        <item itemvalue="TestNG.StandaloneTest2" />
+        <item itemvalue="TestNG.StandaloneTest2.submitOrder" />
         <item itemvalue="Application.UdemySeleniumCourse.Tests.StandaloneTest2" />
-        <item itemvalue="Application.StandaloneTest" />
-        <item itemvalue="Application.StandaloneTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679241141782</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="regroup classes and folders, add BaseTest class to store test config settings">
+      <created>1679245124351</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679245124351</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,7 +277,8 @@
     <MESSAGE value="add ProductCatalog class, AbstractComponent class" />
     <MESSAGE value="add classes for each page (Cart, Payment, Confirmation)" />
     <MESSAGE value="initialize objects within page object classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize objects within page object classes" />
+    <MESSAGE value="regroup classes and folders, add BaseTest class to store test config settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="regroup classes and folders, add BaseTest class to store test config settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
