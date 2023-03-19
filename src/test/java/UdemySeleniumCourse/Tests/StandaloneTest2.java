@@ -1,5 +1,6 @@
-package UdemySeleniumCourse.pageobjects;
+package UdemySeleniumCourse.Tests;
 
+import UdemySeleniumCourse.pageobjects.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.By;
@@ -24,7 +25,7 @@ public class StandaloneTest2 {
         String confirmMsgText = "THANKYOU FOR THE ORDER.";
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--remote-allow-origins=*"); // https://github.com/SeleniumHQ/selenium/issues/11750
         WebDriverManager.chromedriver().setup(); //sets up chrome driver without the need to download the executable and use System.SetProperty
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();

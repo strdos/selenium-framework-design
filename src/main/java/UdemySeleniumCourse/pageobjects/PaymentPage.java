@@ -1,6 +1,6 @@
 package UdemySeleniumCourse.pageobjects;
 
-import AbstractComponents.AbstractComponent;
+import UdemySeleniumCourse.AbstractComponents.AbstractComponent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
