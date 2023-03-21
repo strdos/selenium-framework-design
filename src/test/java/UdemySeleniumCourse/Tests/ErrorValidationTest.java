@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class ErrorValidationTest extends BaseTest {
-    @Test
+    @Test(groups = {"ErrorHandling"})
     public void loginErrorValidation() throws IOException {
         String email = "alex@test.com";
         String password = "invalid"; // invalid

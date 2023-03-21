@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add several tests per class, create testng.xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/OrderPage.java" afterDir="false" />
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add a test method with dependency attribute">
+      <change afterPath="$PROJECT_DIR$/TestSuites/ErroValidations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestSuites/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/AbstractComponents/AbstractComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/StandaloneTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/ErrorValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/ErrorValidationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,21 +55,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/src/main/java/UdemySeleniumCourse/pageobjects&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/src/main/java/UdemySeleniumCourse/pageobjects",
+    "last_opened_file_path": "C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\strdo\IdeaProjects\SeleniumFrameworkDesign\TestSuites" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\strdo\IdeaProjects\SeleniumFrameworkDesign\src\main\java\UdemySeleniumCourse\TestSuites" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="UdemySeleniumCourse.pageobjects" />
       <recent name="UdemySeleniumCourse.Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SubmitOrderTest">
+  <component name="RunManager" selected="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml">
+    <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkDesign" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuites/ErroValidations.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkDesign" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuites/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameworkDesign" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -96,24 +124,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ErrorValidationTest.submitOrder" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrameworkDesign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UdemySeleniumCourse.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UdemySeleniumCourse.Tests" />
-      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.ErrorValidationTest" />
-      <option name="METHOD_NAME" value="submitOrder" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SubmitOrderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameworkDesign" />
       <extension name="coverage">
@@ -131,31 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SubmitOrderTest.submitOrder" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrameworkDesign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UdemySeleniumCourse.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UdemySeleniumCourse.Tests" />
-      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.SubmitOrderTest" />
-      <option name="METHOD_NAME" value="submitOrder" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SubmitOrderTest" />
+        <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml" />
+        <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/testng.xml" />
+        <item itemvalue="TestNG.SubmitOrderTest" />
         <item itemvalue="TestNG.ErrorValidationTest" />
-        <item itemvalue="TestNG.ErrorValidationTest.submitOrder" />
-        <item itemvalue="TestNG.SubmitOrderTest.submitOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679348594134</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add a test method with dependency attribute">
+      <created>1679416614093</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679416614093</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,7 +288,8 @@
     <MESSAGE value="regroup classes and folders, add BaseTest class to store test config settings" />
     <MESSAGE value="add @BeforeMethod and @AfterMethod methods, add error validation test" />
     <MESSAGE value="add several tests per class, create testng.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add several tests per class, create testng.xml" />
+    <MESSAGE value="add a test method with dependency attribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a test method with dependency attribute" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
