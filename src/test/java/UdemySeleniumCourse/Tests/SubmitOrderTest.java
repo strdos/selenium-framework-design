@@ -1,32 +1,23 @@
 package UdemySeleniumCourse.Tests;
 
+import UdemySeleniumCourse.AbstractComponents.AbstractComponent;
 import UdemySeleniumCourse.TestComponents.BaseTest;
 import UdemySeleniumCourse.pageobjects.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.checkerframework.checker.units.qual.C;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.List;
 
-public class StandaloneTest2 extends BaseTest {
+public class SubmitOrderTest extends BaseTest {
+    String email = "alex@test.com";
+    String password = "Test1234!";
+    String itemToAdd = "ZARA COAT 3";
+    String country = "Australia";
+    String confirmMsgText = "THANKYOU FOR THE ORDER.";
     @Test
     public void submitOrder() throws IOException {
-        String email = "alex@test.com";
-        String password = "Test1234!";
-        String itemToAdd = "ZARA COAT 3";
-        String country = "Australia";
-        String confirmMsgText = "THANKYOU FOR THE ORDER.";
-
         ProductCatalog productCatalog = landingPage.loginToApplication(email, password);
         List<WebElement> products = productCatalog.getProductList();
         productCatalog.addProductToCart(itemToAdd);
@@ -39,5 +30,11 @@ public class StandaloneTest2 extends BaseTest {
 
         ConfirmationPage confirmationPage = paymentPage.placeOrder();
         Assert.assertEquals(confirmMsgText, confirmationPage.getConfirmationText());
+    }
+    @Test(dependsOnMethods = {"submitOrder"})
+    public void checkOrderHistory() {
+        ProductCatalog productCatalog = landingPage.loginToApplication(email, password);
+        OrderPage orderPage = productCatalog.goToOrdersPage();
+        Assert.assertTrue(orderPage.isAddedProductDisplayed(itemToAdd));
     }
 }
