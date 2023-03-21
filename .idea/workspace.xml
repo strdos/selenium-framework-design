@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add a test method with dependency attribute">
-      <change afterPath="$PROJECT_DIR$/TestSuites/ErroValidations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestSuites/testng.xml" afterDir="false" />
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add parallel run and grouping">
+      <change afterPath="$PROJECT_DIR$/TestSuites/Purchase.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/ErrorValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/ErrorValidationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSuites/ErroValidations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuites/ErroValidations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/regdata" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/regdata" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,10 +76,20 @@
       <recent name="UdemySeleniumCourse.Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/Purchase.xml">
     <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameworkDesign" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuites/ErroValidations.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/Purchase.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkDesign" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuites/Purchase.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -107,23 +117,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ErrorValidationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrameworkDesign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="UdemySeleniumCourse.Tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="UdemySeleniumCourse.Tests" />
-      <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.ErrorValidationTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SubmitOrderTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameworkDesign" />
       <extension name="coverage">
@@ -143,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/Purchase.xml" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/testng.xml" />
         <item itemvalue="TestNG.SubmitOrderTest" />
-        <item itemvalue="TestNG.ErrorValidationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679416614093</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add parallel run and grouping">
+      <created>1679428329275</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679428329275</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,7 +289,8 @@
     <MESSAGE value="add @BeforeMethod and @AfterMethod methods, add error validation test" />
     <MESSAGE value="add several tests per class, create testng.xml" />
     <MESSAGE value="add a test method with dependency attribute" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a test method with dependency attribute" />
+    <MESSAGE value="add parallel run and grouping" />
+    <option name="LAST_COMMIT_MESSAGE" value="add parallel run and grouping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,17 +3,13 @@
 <suite parallel="tests" name="All Test Suite">
     <groups>
         <run>
-            <include name="ErrorHandling"/>
+            <include name="Purchase"/>
         </run>
     </groups>
     <test thread-count="5" name="Submit Order">
         <classes>
-            <class name="UdemySeleniumCourse.Tests.SubmitOrderTest"/>
-        </classes>
-    </test>
-    <test thread-count="5" name="Error Validation">
-        <classes>
-            <class name="UdemySeleniumCourse.Tests.ErrorValidationTest"/>
+            <class name="UdemySeleniumCourse.Tests.SubmitOrderTest">
+            </class>
         </classes>
     </test>
 </suite>
