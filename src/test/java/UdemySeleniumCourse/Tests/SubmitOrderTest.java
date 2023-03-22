@@ -8,6 +8,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 public class SubmitOrderTest extends BaseTest {
@@ -17,13 +18,13 @@ public class SubmitOrderTest extends BaseTest {
     String country = "Australia";
     String confirmMsgText = "THANKYOU FOR THE ORDER.";
     @Test(dataProvider = "getData", groups = {"Purchase"})
-    public void submitOrder(String email, String password, String itemToAdd) throws IOException {
-        ProductCatalog productCatalog = landingPage.loginToApplication(email, password);
+    public void submitOrder(HashMap<String, String> dataSet) throws IOException {
+        ProductCatalog productCatalog = landingPage.loginToApplication(dataSet.get("email"), dataSet.get("password"));
         List<WebElement> products = productCatalog.getProductList();
-        productCatalog.addProductToCart(itemToAdd);
+        productCatalog.addProductToCart(dataSet.get("itemToAdd"));
 
         CartPage cartPage = productCatalog.goToCart();
-        Assert.assertTrue(cartPage.isProductMatch(itemToAdd));
+        Assert.assertTrue(cartPage.isProductMatch(dataSet.get("itemToAdd")));
 
         PaymentPage paymentPage = cartPage.goToCheckout();
         paymentPage.selectCountry(country);
@@ -38,7 +39,8 @@ public class SubmitOrderTest extends BaseTest {
         Assert.assertTrue(orderPage.isAddedProductDisplayed(itemToAdd));
     }
     @DataProvider
-    public Object[][] getData() {
-        return new Object[][] { {email, password, itemToAdd}, {"alex2@test.com", "Test1234!2", "ADIDAS ORIGINAL"} };
+    public Object[][] getData() throws IOException {
+        List<HashMap<String, String >> data = getJsonDataToHashMap(System.getProperty("user.dir")+"\\src\\test\\java\\data\\PurchaseOrder.json");
+        return new Object[][] { {data.get(0)}, {data.get(1)} };
     }
 }

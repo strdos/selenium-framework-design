@@ -4,18 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add parallel run and grouping">
-      <change afterPath="$PROJECT_DIR$/TestSuites/Purchase.xml" afterDir="false" />
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/data/PurchaseOrder.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuites/ErroValidations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuites/ErroValidations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/regdata" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/regdata" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportTestResults" outputFolder="$PROJECT_DIR$" openResultsInEditor="true" userTempatePath="" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -55,15 +56,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/src/main/java/UdemySeleniumCourse/pageobjects",
-    "last_opened_file_path": "C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/src/main/java/UdemySeleniumCourse/pageobjects&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\strdo\IdeaProjects\SeleniumFrameworkDesign\TestSuites" />
@@ -251,7 +252,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679428329275</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add data sets via @DataProvider">
+      <created>1679434639992</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679434639992</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add data sets via @DataProvider annotation">
+      <created>1679434747821</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679434747821</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add data sets via @DataProvider annotation">
+      <created>1679434981741</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679434981741</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,7 +312,9 @@
     <MESSAGE value="add several tests per class, create testng.xml" />
     <MESSAGE value="add a test method with dependency attribute" />
     <MESSAGE value="add parallel run and grouping" />
-    <option name="LAST_COMMIT_MESSAGE" value="add parallel run and grouping" />
+    <MESSAGE value="add data sets via @DataProvider" />
+    <MESSAGE value="add data sets via @DataProvider annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add data sets via @DataProvider annotation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
