@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/data/PurchaseOrder.json" afterDir="false" />
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add methods to convert json to string to hashmap list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -273,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679434981741</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add methods to convert json to string to hashmap list">
+      <created>1679494995155</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1679494995155</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,7 +318,8 @@
     <MESSAGE value="add parallel run and grouping" />
     <MESSAGE value="add data sets via @DataProvider" />
     <MESSAGE value="add data sets via @DataProvider annotation" />
-    <option name="LAST_COMMIT_MESSAGE" value="add data sets via @DataProvider annotation" />
+    <MESSAGE value="add methods to convert json to string to hashmap list" />
+    <option name="LAST_COMMIT_MESSAGE" value="add methods to convert json to string to hashmap list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

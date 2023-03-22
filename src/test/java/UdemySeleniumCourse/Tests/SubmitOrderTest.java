@@ -2,11 +2,15 @@ package UdemySeleniumCourse.Tests;
 
 import UdemySeleniumCourse.TestComponents.BaseTest;
 import UdemySeleniumCourse.pageobjects.*;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
@@ -37,6 +41,14 @@ public class SubmitOrderTest extends BaseTest {
         ProductCatalog productCatalog = landingPage.loginToApplication(email, password);
         OrderPage orderPage = productCatalog.goToOrdersPage();
         Assert.assertTrue(orderPage.isAddedProductDisplayed(itemToAdd));
+    }
+    public String getScreenshot(String testCaseName) throws IOException {
+        TakesScreenshot ts = (TakesScreenshot)driver;
+        File src = ts.getScreenshotAs(OutputType.FILE);
+        String filePath = System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
+        File dest = new File(filePath);
+        FileUtils.copyFile(src, dest);
+        return filePath;
     }
     @DataProvider
     public Object[][] getData() throws IOException {
