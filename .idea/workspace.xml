@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add methods to convert json to string to hashmap list">
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add getScreenshot method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/resources/ExtentReporterNG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/RetryAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestSuites/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuites/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/ErrorValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/ErrorValidationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,15 +60,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/src/main/java/UdemySeleniumCourse/pageobjects&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/src/main/java/UdemySeleniumCourse/pageobjects",
+    "last_opened_file_path": "C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\strdo\IdeaProjects\SeleniumFrameworkDesign\TestSuites" />
@@ -74,7 +81,7 @@
       <recent name="UdemySeleniumCourse.Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/Purchase.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml">
     <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameworkDesign" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuites/ErroValidations.xml" />
@@ -134,9 +141,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/Purchase.xml" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml" />
-        <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/testng.xml" />
         <item itemvalue="TestNG.SubmitOrderTest" />
       </list>
@@ -277,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679494995155</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add getScreenshot method">
+      <created>1679495706503</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679495706503</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -319,7 +333,8 @@
     <MESSAGE value="add data sets via @DataProvider" />
     <MESSAGE value="add data sets via @DataProvider annotation" />
     <MESSAGE value="add methods to convert json to string to hashmap list" />
-    <option name="LAST_COMMIT_MESSAGE" value="add methods to convert json to string to hashmap list" />
+    <MESSAGE value="add getScreenshot method" />
+    <option name="LAST_COMMIT_MESSAGE" value="add getScreenshot method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

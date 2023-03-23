@@ -42,14 +42,7 @@ public class SubmitOrderTest extends BaseTest {
         OrderPage orderPage = productCatalog.goToOrdersPage();
         Assert.assertTrue(orderPage.isAddedProductDisplayed(itemToAdd));
     }
-    public String getScreenshot(String testCaseName) throws IOException {
-        TakesScreenshot ts = (TakesScreenshot)driver;
-        File src = ts.getScreenshotAs(OutputType.FILE);
-        String filePath = System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
-        File dest = new File(filePath);
-        FileUtils.copyFile(src, dest);
-        return filePath;
-    }
+
     @DataProvider
     public Object[][] getData() throws IOException {
         List<HashMap<String, String >> data = getJsonDataToHashMap(System.getProperty("user.dir")+"\\src\\test\\java\\data\\PurchaseOrder.json");
