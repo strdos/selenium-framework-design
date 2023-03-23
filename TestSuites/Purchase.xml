@@ -9,6 +9,9 @@
     <test thread-count="5" name="Submit Order">
         <classes>
             <class name="UdemySeleniumCourse.Tests.SubmitOrderTest">
+                <methods>
+                    <include name="submitOrder"/>
+                </methods>
             </class>
         </classes>
     </test>
