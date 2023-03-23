@@ -34,7 +34,8 @@ public class BaseTest {
         Properties prop = new Properties(); //create object of Properties class to read the properties from .properties file in the resources folder
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\UdemySeleniumCourse\\resources\\global_data.properties");
         prop.load(fis);
-        String browserName = prop.getProperty("browser");
+
+        String browserName = System.getProperty("browser") != null ? System.getProperty("browser") :  prop.getProperty("browser");
 
         switch (browserName){
             case "chrome":

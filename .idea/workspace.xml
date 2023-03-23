@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add ExtentReporter, Listeners, and Retry classes">
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add maven-surefire-plugin and suite xml profiles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuites/Purchase.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuites/Purchase.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679583981869</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add maven-surefire-plugin and suite xml profiles">
+      <created>1679600348474</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1679600348474</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -336,7 +342,8 @@
     <MESSAGE value="add methods to convert json to string to hashmap list" />
     <MESSAGE value="add getScreenshot method" />
     <MESSAGE value="add ExtentReporter, Listeners, and Retry classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ExtentReporter, Listeners, and Retry classes" />
+    <MESSAGE value="add maven-surefire-plugin and suite xml profiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add maven-surefire-plugin and suite xml profiles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
