@@ -20,7 +20,7 @@ public class ErrorValidationTest extends BaseTest {
 
         landingPage.loginToApplication(email, password); //send invalid password
         Assert.assertEquals(landingPage.getErrorMsg(), errorMsg);
-        Assert.assertEquals(landingPage.getErrorMsg(), "invalid"); //INVALID
+        //Assert.assertEquals(landingPage.getErrorMsg(), "invalid"); //INVALID
     }
     @Test
     public void productErrorValidation() throws IOException {

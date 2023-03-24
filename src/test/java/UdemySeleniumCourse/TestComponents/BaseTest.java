@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -37,25 +38,23 @@ public class BaseTest {
 
         String browserName = System.getProperty("browser") != null ? System.getProperty("browser") :  prop.getProperty("browser");
 
-        switch (browserName){
-            case "chrome":
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--remote-allow-origins=*"); // https://github.com/SeleniumHQ/selenium/issues/11750
-                WebDriverManager.chromedriver().setup(); //sets up chrome driver without the need to download the executable and use System.SetProperty
-                driver = new ChromeDriver(options);
-                break;
-            case "firefox":
-                driver = new FirefoxDriver();
-                break;
-            case "edge":
-                driver = new EdgeDriver();
-                break;
+        if (browserName.contains("chrome")) {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*"); // https://github.com/SeleniumHQ/selenium/issues/11750
+            if (browserName.contains("headless")) { options.addArguments("headless"); }
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver(options);
+            driver.manage().window().setSize(new Dimension(1440, 990)); // will prevail over driver.manage().window().maximize();
+
+        } else if (browserName.equalsIgnoreCase("firefox")) {
+            driver = new FirefoxDriver();
+        } else if (browserName.equalsIgnoreCase("edge")) {
+            driver = new EdgeDriver();
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.manage().window().maximize();
         return driver;
-
     }
 
     public List<HashMap<String, String>> getJsonDataToHashMap(String filePath) throws IOException {
