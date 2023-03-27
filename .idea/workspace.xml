@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="update BaseTest to use browser property from maven at runtime">
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="refactor BaseTest to add options for headless">
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/SubmitOrder.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/StepDefinitionsImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestSuites/ErroValidations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuites/ErrorValidations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/TestComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/ErrorValidationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/ErrorValidationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +49,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2MnEbexLDQTvjo5i8pxhP1pNDgx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -61,7 +64,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/src/main/java/UdemySeleniumCourse/pageobjects&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -307,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679606543985</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="refactor BaseTest to add options for headless">
+      <created>1679674375251</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1679674375251</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -353,7 +364,8 @@
     <MESSAGE value="add ExtentReporter, Listeners, and Retry classes" />
     <MESSAGE value="add maven-surefire-plugin and suite xml profiles" />
     <MESSAGE value="update BaseTest to use browser property from maven at runtime" />
-    <option name="LAST_COMMIT_MESSAGE" value="update BaseTest to use browser property from maven at runtime" />
+    <MESSAGE value="refactor BaseTest to add options for headless" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor BaseTest to add options for headless" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
