@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="refactor BaseTest to add options for headless">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/SubmitOrder.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/StepDefinitionsImplementation.java" afterDir="false" />
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add Cucumber dependencies, .feature file, and step definitions implementation">
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/TestNGTestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/SubmitOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/SubmitOrder.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/StepDefinitionsImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/StepDefinitionsImplementation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <recent name="UdemySeleniumCourse.Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/Purchase.xml">
+  <component name="RunManager" selected="TestNG.TestNGTestRunner">
     <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameworkDesign" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuites/ErroValidations.xml" />
@@ -111,17 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFrameworkDesign" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SubmitOrderTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SubmitOrderTest.submitOrder" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameworkDesign" />
       <extension name="coverage">
         <pattern>
@@ -131,6 +121,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="UdemySeleniumCourse.Tests" />
       <option name="MAIN_CLASS_NAME" value="UdemySeleniumCourse.Tests.SubmitOrderTest" />
+      <option name="METHOD_NAME" value="submitOrder" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNGTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFrameworkDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cucumber" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.TestNGTestRunner" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -140,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNGTestRunner" />
+        <item itemvalue="TestNG.SubmitOrderTest.submitOrder" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/Purchase.xml" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml" />
         <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/ErroValidations.xml" />
-        <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/testng.xml" />
-        <item itemvalue="TestNG.SubmitOrderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679674375251</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add Cucumber dependencies, .feature file, and step definitions implementation">
+      <created>1679931747731</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1679931747731</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -365,7 +380,8 @@
     <MESSAGE value="add maven-surefire-plugin and suite xml profiles" />
     <MESSAGE value="update BaseTest to use browser property from maven at runtime" />
     <MESSAGE value="refactor BaseTest to add options for headless" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor BaseTest to add options for headless" />
+    <MESSAGE value="add Cucumber dependencies, .feature file, and step definitions implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Cucumber dependencies, .feature file, and step definitions implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -374,9 +390,23 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="5" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/stepDefinitions/StepDefinitionsImplementation.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/UdemySeleniumCourse/Tests/SubmitOrderTest.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="confirmationMsg" />
+        <watch expression="confirmationPage.getConfirmationText()" />
+      </configuration>
       <configuration name="Application">
         <watch expression="itemName.getText()" />
         <watch expression="(itemName.getText() == itemToAdd)" />

@@ -33,19 +33,21 @@ public class StepDefinitionsImplementation extends BaseTest {
         List<WebElement> products = productCatalog.getProductList();
         productCatalog.addProductToCart(product);
     }
-    @When("^And I verify that (.+) has been added to the cart$")
+    @When("^I verify that (.+) has been added to the cart$")
     public void I_verify_product_added_to_cart(String product) {
         cartPage = productCatalog.goToCart();
         Assert.assertTrue(cartPage.isProductMatch(product));
     }
-    @When("I submit the order")
-    public void I_submit_the_order() {
+    @When("^I submit the order (.+)$")
+    public void I_submit_the_order(String country) {
         paymentPage = cartPage.goToCheckout();
+        paymentPage.selectCountry(country);
     }
     @Then("^I verify that correct (.+) is displayed$")
     public void I_verify_that_correct_confirmation_message_is_displayed (String confirmationMsg) {
         ConfirmationPage confirmationPage = paymentPage.placeOrder();
-        Assert.assertEquals(confirmationMsg, confirmationPage.getConfirmationText());
+        Assert.assertEquals(confirmationPage.getConfirmationText(), confirmationMsg);
+        driver.close();
     }
 
 }
