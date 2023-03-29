@@ -49,5 +49,10 @@ public class StepDefinitionsImplementation extends BaseTest {
         Assert.assertEquals(confirmationPage.getConfirmationText(), confirmationMsg);
         driver.close();
     }
+    @Then("^(.+) text is correct$")
+    public void error_message_text_is_correct(String errorMsg) {
+        Assert.assertEquals(landingPage.getErrorMsg(), errorMsg);
+        driver.close();
+    }
 
 }

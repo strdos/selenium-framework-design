@@ -4,7 +4,7 @@
     Background:
       Given I am on the landing page
 
-    @tag2
+    @Smoke
     Scenario Outline: Submit an order with valid data
       Given I am logged in with <email> and <password>
       When I add <product> to the cart
