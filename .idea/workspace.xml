@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add Cucumber TestNGTestRunner">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/ErrorValidations.feature" afterDir="false" />
+    <list default="true" id="8e0e801b-c545-49ff-a088-a4b8062f0115" name="Changes" comment="add another feature file, another profile in pom, and Cucumber tags">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/SubmitOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/SubmitOrder.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/TestNGTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/TestNGTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/StepDefinitionsImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/StepDefinitionsImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/AbstractComponents/AbstractComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/AbstractComponents/AbstractComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ConfirmationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ConfirmationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/OrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UdemySeleniumCourse/pageobjects/ProductCatalog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +84,7 @@
       <recent name="UdemySeleniumCourse.Tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestNGTestRunner">
+  <component name="RunManager" selected="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml">
     <configuration name="Feature: ErrorValidations" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/cucumber/ErrorValidations.feature" />
@@ -121,9 +123,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/Purchase.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFrameworkDesign" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuites/Purchase.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestSuites/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -168,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/testng.xml" />
         <item itemvalue="TestNG.TestNGTestRunner" />
         <item itemvalue="Cucumber Java.Feature: SubmitOrder" />
         <item itemvalue="Cucumber Java.Feature: ErrorValidations" />
         <item itemvalue="TestNG.SubmitOrderTest.submitOrder" />
-        <item itemvalue="TestNG.C:/Users/strdo/IdeaProjects/SeleniumFrameworkDesign/TestSuites/Purchase.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -360,7 +362,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680016682433</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add another feature file, another profile in pom, and Cucumber tags">
+      <created>1680102218999</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1680102218999</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -409,7 +418,8 @@
     <MESSAGE value="refactor BaseTest to add options for headless" />
     <MESSAGE value="add Cucumber dependencies, .feature file, and step definitions implementation" />
     <MESSAGE value="add Cucumber TestNGTestRunner" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Cucumber TestNGTestRunner" />
+    <MESSAGE value="add another feature file, another profile in pom, and Cucumber tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="add another feature file, another profile in pom, and Cucumber tags" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

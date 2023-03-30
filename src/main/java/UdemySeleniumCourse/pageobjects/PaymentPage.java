@@ -19,11 +19,11 @@ public class PaymentPage extends AbstractComponent {
     }
 
     @FindBy(css = "input[placeholder*='Country']")
-    WebElement country;
+    private WebElement country;
     @FindBy(css = "[class*='ta-results'] [class*='ta-item']")
-    List<WebElement> countryResults;
+    private List<WebElement> countryResults;
     @FindBy(css = "[class*='action__submit']")
-    WebElement placeOrderBtn;
+    private WebElement placeOrderBtn;
 
     public void selectCountry (String countryName) {
         country.sendKeys(countryName.substring(0,3));

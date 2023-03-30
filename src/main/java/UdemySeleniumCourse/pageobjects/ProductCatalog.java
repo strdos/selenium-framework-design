@@ -19,15 +19,15 @@ public class ProductCatalog extends AbstractComponent {
     }
 
     @FindBy(css="[class*='mb-3']")
-    List<WebElement> products;
+    private List<WebElement> products;
     @FindBy(className="ng-animating")
-    WebElement spinner;
+    private WebElement spinner;
     @FindBy(xpath = "//button[@routerlink='/dashboard/cart']")
-    WebElement cartBtn;
+    private WebElement cartBtn;
 
-    By productsLocator = By.cssSelector("[class*='mb-3']");
-    By addToCart = By.cssSelector("[class*='mb-3'] button:last-of-type");
-    By toastMsg = By.id("toast-container");
+    private By productsLocator = By.cssSelector("[class*='mb-3']");
+    private By addToCart = By.cssSelector("[class*='mb-3'] button:last-of-type");
+    private By toastMsg = By.id("toast-container");
 
     public List<WebElement> getProductList() {
         waitForElementToAppear(productsLocator);

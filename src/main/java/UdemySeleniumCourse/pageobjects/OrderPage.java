@@ -19,7 +19,7 @@ public class OrderPage extends AbstractComponent {
     }
 
     @FindBy(css = "tr td:nth-child(3)")
-    List<WebElement> productNames;
+    private List<WebElement> productNames;
 
     public boolean isAddedProductDisplayed(String itemToAdd) {
         return productNames.stream().anyMatch(p -> p.getText().equalsIgnoreCase(itemToAdd));

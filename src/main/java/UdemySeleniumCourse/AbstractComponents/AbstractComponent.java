@@ -20,7 +20,7 @@ public class AbstractComponent {
     }
 
     @FindBy(css = "[routerlink*='myorders'")
-    WebElement orderHeader;
+    private WebElement orderHeader;
     public OrderPage goToOrdersPage() {
         orderHeader.click();
         OrderPage orderPage = new OrderPage(driver);

@@ -19,9 +19,9 @@ public class CartPage extends AbstractComponent {
     }
 
     @FindBy(css = ".cartSection h3")
-    List<WebElement> productNames;
+    private List<WebElement> productNames;
     @FindBy(css = "[class*='subtotal'] button")
-    WebElement checkoutBtn;
+    private WebElement checkoutBtn;
 
     public boolean isProductMatch(String itemToAdd) {
         return productNames.stream().anyMatch(p -> p.getText().equalsIgnoreCase(itemToAdd));

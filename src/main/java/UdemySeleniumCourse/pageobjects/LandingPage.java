@@ -16,13 +16,13 @@ public class LandingPage extends AbstractComponent {
 
     //PageFactory (driver is initialized in the constructor)
     @FindBy(id="userEmail")
-    WebElement userEmail;
+    private WebElement userEmail;
     @FindBy(id="userPassword")
-    WebElement userPassword;
+    private WebElement userPassword;
     @FindBy(id="login")
-    WebElement submitBtn;
+    private WebElement submitBtn;
     @FindBy(css = "[class*='flyInOut'")
-    WebElement errorToastMsg;
+    private WebElement errorToastMsg;
 
 
     public void goToUrl(String url) {
